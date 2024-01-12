@@ -3264,12 +3264,12 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <attribute name="VALUE" x="177.8" y="52.07" size="1.778" layer="96"/>
 </instance>
 <instance part="U$3" gate="G$1" x="270.51" y="62.23" smashed="yes" rot="R90">
-<attribute name="NAME" x="234.95" y="59.69" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="237.49" y="59.69" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="238.76" y="62.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="275.59" y="62.23" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$4" gate="G$1" x="242.57" y="123.19" smashed="yes" rot="MR90">
-<attribute name="NAME" x="278.13" y="120.65" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="275.59" y="120.65" size="1.778" layer="96" rot="MR90"/>
+<attribute name="NAME" x="236.22" y="123.19" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="274.32" y="118.11" size="1.778" layer="96" rot="MR90"/>
 </instance>
 </instances>
 <busses>
@@ -3402,6 +3402,12 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <pinref part="CONN2" gate="CONN1" pin="3"/>
 <pinref part="U$3" gate="G$1" pin="10"/>
 <label x="265.43" y="45.085" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="CONN1" gate="CONN1" pin="8"/>
+<wire x1="252.73" y1="99.06" x2="252.73" y2="120.65" width="0.1524" layer="91"/>
+<label x="252.73" y="100.965" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$4" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -3691,14 +3697,6 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <label x="247.65" y="100.965" size="1.778" layer="95" rot="R90"/>
 <pinref part="CONN1" gate="CONN1" pin="10"/>
 <pinref part="U$4" gate="G$1" pin="10"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="CONN1" gate="CONN1" pin="8"/>
-<wire x1="252.73" y1="99.06" x2="252.73" y2="120.65" width="0.1524" layer="91"/>
-<label x="252.73" y="100.965" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="N$3" class="0">

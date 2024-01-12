@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
@@ -1301,10 +1301,10 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="9"/>
 <contactref element="U$3" pad="P$9"/>
 <contactref element="U$3" pad="9"/>
-<wire x1="15.5644" y1="25.1046" x2="14.65" y2="26.019" width="0.8128" layer="16"/>
+<wire x1="15.666" y1="25.003" x2="14.65" y2="26.019" width="0.8128" layer="16"/>
 <wire x1="14.65" y1="26.4" x2="14.65" y2="26.019" width="0.8128" layer="16"/>
-<wire x1="15.5644" y1="25.1046" x2="15.5644" y2="20.4356" width="0.8128" layer="16"/>
-<wire x1="15.5644" y1="20.4356" x2="15.65" y2="19.85" width="0.8128" layer="16"/>
+<wire x1="15.65" y1="19.85" x2="15.666" y2="19.866" width="0.8128" layer="16"/>
+<wire x1="15.666" y1="25.003" x2="15.666" y2="19.866" width="0.8128" layer="16"/>
 <wire x1="24.81" y1="1.6764" x2="24.35" y2="2.1364" width="0.8128" layer="16"/>
 <wire x1="24.35" y1="2.1364" x2="24.35" y2="7.15" width="0.8128" layer="16"/>
 <via x="9.4442" y="24.003" extent="1-16" drill="0.3048" diameter="0.6"/>
@@ -1343,6 +1343,28 @@ design rules under a new name.</description>
 <wire x1="26.89" y1="2.0602" x2="26.89" y2="3.85" width="0.8128" layer="16"/>
 <wire x1="27.35" y1="0.6" x2="27.35" y2="1.6002" width="0.8128" layer="16"/>
 <wire x1="30.3784" y1="17.9896" x2="30.3784" y2="19.9264" width="0.8128" layer="1"/>
+<contactref element="CONN1" pad="8"/>
+<contactref element="U$4" pad="8"/>
+<contactref element="U$4" pad="P$8"/>
+<wire x1="18.19" y1="25.0856" x2="17.19" y2="26.0856" width="0.8128" layer="16"/>
+<wire x1="17.19" y1="27" x2="17.19" y2="26.4" width="0.8128" layer="16"/>
+<wire x1="18.19" y1="25.0856" x2="18.19" y2="23.15" width="0.8128" layer="16"/>
+<wire x1="17.19" y1="26.4" x2="17.19" y2="26.0856" width="0.8128" layer="16"/>
+<wire x1="17.19" y1="26.4" x2="17.19" y2="25.1402" width="1.016" layer="16"/>
+<wire x1="15.65" y1="19.85" x2="15.612" y2="19.812" width="1.016" layer="16"/>
+<wire x1="15.612" y1="19.812" x2="14.2748" y2="19.812" width="0.8128" layer="16"/>
+<wire x1="15.65" y1="19.85" x2="17.234" y2="19.85" width="0.8128" layer="16"/>
+<wire x1="17.234" y1="19.85" x2="17.2974" y2="19.7866" width="1.016" layer="16"/>
+<wire x1="15.65" y1="19.85" x2="15.65" y2="18.0558" width="0.8128" layer="16"/>
+<wire x1="15.65" y1="18.0558" x2="15.7226" y2="17.9832" width="0.762" layer="16"/>
+<wire x1="18.19" y1="23.15" x2="18.19" y2="21.4666" width="0.762" layer="16"/>
+<wire x1="18.19" y1="21.4666" x2="17.9832" y2="21.2598" width="0.762" layer="16"/>
+<wire x1="18.19" y1="23.15" x2="18.1032" y2="23.0632" width="0.762" layer="16"/>
+<wire x1="18.1032" y1="23.0632" x2="16.7132" y2="23.0632" width="0.762" layer="16"/>
+<wire x1="16.7132" y1="23.0632" x2="16.8" y2="23.15" width="0.762" layer="16"/>
+<wire x1="16.8" y1="23.15" x2="18.19" y2="23.15" width="0.762" layer="16"/>
+<wire x1="18.19" y1="23.15" x2="19.5474" y2="23.15" width="0.762" layer="16"/>
+<wire x1="19.5474" y1="23.15" x2="19.5834" y2="23.114" width="0.762" layer="16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="C18" pad="2"/>
@@ -1765,15 +1787,6 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <wire x1="35.8014" y1="16.662190625" x2="35.8014" y2="15.72006875" width="0.1524" layer="1"/>
 <wire x1="35.8014" y1="15.72006875" x2="35.78900625" y2="15.71" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$1">
-<contactref element="CONN1" pad="8"/>
-<contactref element="U$4" pad="8"/>
-<contactref element="U$4" pad="P$8"/>
-<wire x1="18.19" y1="25.0856" x2="17.19" y2="26.0856" width="0.8128" layer="16"/>
-<wire x1="17.19" y1="27" x2="17.19" y2="26.4" width="0.8128" layer="16"/>
-<wire x1="18.19" y1="25.0856" x2="18.19" y2="23.15" width="0.8128" layer="16"/>
-<wire x1="17.19" y1="26.4" x2="17.19" y2="26.0856" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="CONN1" pad="7"/>
