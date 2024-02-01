@@ -3034,11 +3034,11 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <part name="CONN1" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="CONN12" device="" package3d_urn="urn:adsk.eagle:package:32962518/1"/>
 <part name="CONN2" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" deviceset="CONN12" device="" package3d_urn="urn:adsk.eagle:package:32962518/1"/>
 <part name="C4" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="CAP" device="0402A" package3d_urn="urn:adsk.eagle:package:21650778/5" value="0.027uF"/>
-<part name="R2" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="39.2K"/>
+<part name="R2" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="12K"/>
 <part name="C1" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="CAP" device="0402A" package3d_urn="urn:adsk.eagle:package:21650778/5" value="0.1uF"/>
 <part name="C8" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="CAP" device="0402A" package3d_urn="urn:adsk.eagle:package:21650778/5" value="NC-33pF"/>
-<part name="R3" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="30K"/>
-<part name="R4" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="47K"/>
+<part name="R3" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="82K"/>
+<part name="R4" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="82K"/>
 <part name="R5" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="39.2K"/>
 <part name="C9" library="Particle" deviceset="CAP_1" device="" value="0.1uF"/>
 <part name="C10" library="Particle" deviceset="CAP_1" device="" value="1000pF"/>

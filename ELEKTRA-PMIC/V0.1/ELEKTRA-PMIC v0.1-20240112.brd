@@ -27,14 +27,14 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="0" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -256,6 +256,28 @@
 <text x="29.0576" y="-0.1524" size="0.8128" layer="21" rot="R90">GND</text>
 <text x="31.5214" y="0.4064" size="0.8128" layer="21" rot="R90">VIN</text>
 <text x="34.2392" y="0.4826" size="0.8128" layer="21" rot="R90">VIN</text>
+<wire x1="3.0226" y1="19.5326" x2="1.1938" y2="21.3614" width="0.1524" layer="25"/>
+<wire x1="1.1938" y1="21.3614" x2="-3.556" y2="21.3614" width="0.1524" layer="25"/>
+<wire x1="4.699" y1="20.2692" x2="4.699" y2="21.4122" width="0.1524" layer="25"/>
+<wire x1="4.699" y1="21.4122" x2="4.6482" y2="21.463" width="0.1524" layer="25"/>
+<wire x1="4.6482" y1="21.463" x2="4.5974" y2="21.4122" width="0.1524" layer="25"/>
+<wire x1="4.5974" y1="21.4122" x2="1.0668" y2="21.4122" width="0.1524" layer="25"/>
+<wire x1="13.0048" y1="19.939" x2="12.9286" y2="20.0152" width="0.1524" layer="25"/>
+<wire x1="12.9286" y1="20.0152" x2="12.446" y2="20.0152" width="0.1524" layer="25"/>
+<wire x1="12.446" y1="20.0152" x2="12.446" y2="21.1074" width="0.1524" layer="25"/>
+<wire x1="12.446" y1="21.1074" x2="12.7762" y2="21.4376" width="0.1524" layer="25"/>
+<wire x1="12.7762" y1="21.4376" x2="14.5034" y2="21.4376" width="0.1524" layer="25"/>
+<text x="-4.826" y="25.8064" size="0.6096" layer="25" rot="R270">R16（NC）/R18(1M)-贴片对调-R16（1M）/R18(NC)-此图是正确位置</text>
+<text x="34.798" y="24.0792" size="0.6096" layer="25" rot="R180">R23（NC）/R24(1M)-贴片对调-R23（1M）/R24(NC)</text>
+<wire x1="14.5796" y1="21.4376" x2="14.6558" y2="21.5138" width="0.1524" layer="25"/>
+<wire x1="14.6558" y1="21.5138" x2="14.6558" y2="23.4696" width="0.1524" layer="25"/>
+<wire x1="13.6906" y1="21.3614" x2="13.6906" y2="19.939" width="0.1524" layer="25"/>
+<wire x1="5.715" y1="20.3962" x2="5.715" y2="24.2824" width="0.1524" layer="25"/>
+<wire x1="5.715" y1="24.2824" x2="5.6388" y2="24.3586" width="0.1524" layer="25"/>
+<text x="3.175" y="24.9428" size="1.778" layer="25">添加</text>
+<text x="15.2654" y="22.3266" size="0.6096" layer="25">添加</text>
+<wire x1="15.9004" y1="21.2344" x2="16.3068" y2="21.6408" width="0.1524" layer="25"/>
+<wire x1="16.3068" y1="21.6408" x2="16.3068" y2="22.1996" width="0.1524" layer="25"/>
 </plain>
 <libraries>
 <library name="Particle">
@@ -1002,96 +1024,96 @@ design rules under a new name.</description>
 <elements>
 <element name="C57" library="particle SZ" package="C-0603A" value="10uF" x="36.3224" y="8.7824" smashed="yes" rot="R270">
 <attribute name="NAME" x="36.3503" y="7.2116" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="36.0176" y="7.5251" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="37.3892" y="8.6935" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="C58" library="particle SZ" package="C-0603A" value="10uF" x="25.3289" y="15.5914" smashed="yes">
 <attribute name="NAME" x="23.3855" y="15.6409" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="26.6878" y="15.2866" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="25.3924" y="15.5914" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C59" library="particle SZ" package="C-0603A" value="10uF" x="25.3289" y="17.0138" smashed="yes">
 <attribute name="NAME" x="23.4047" y="17.0017" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="26.7132" y="16.7852" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="25.4178" y="17.0392" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C64" library="particle SZ" package="C-0603A" value="10uF" x="36.3224" y="11.3292" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.3315" y="11.8994" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="36.6526" y="12.6119" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="37.2622" y="11.3673" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C65" library="Bretts-Spark-Library" package="C0603_B" value="4.7uF" x="29.3652" y="7.8958" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.356" y="7.9703" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="28.1333" y="8.099" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="27.4221" y="7.8196" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="D5" library="SparkFun-LED" package="LED-0603" value="yellow" x="35.4852" y="13.3644" smashed="yes" rot="R180">
 <attribute name="NAME" x="37.5612" y="13.37" size="0.6096" layer="21" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="PROD_ID" value="DIO-00819" x="3.7352" y="111.1544" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="35.5614" y="14.1518" size="0.4064" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+<attribute name="VALUE" x="38.4062" y="13.3644" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="center"/>
 </element>
 <element name="L7" library="Particle" package="INDUCTOR-4040" value="2.2uH" x="25.3818" y="11.727" smashed="yes" rot="R90">
 <attribute name="NAME" x="25.4618" y="11.7028" size="0.6096" layer="21" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="23.9336" y="11.1272" size="0.4064" layer="27" font="vector" rot="R90"/>
+<attribute name="VALUE" x="25.4576" y="11.7368" size="0.6096" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R30" library="Particle" package="R0402_B" value="4K7" x="34.4146" y="14.679" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.1306" y="14.6999" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="34.9099" y="15.441" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="32.9795" y="14.6536" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
-<element name="R34" library="Spark" package="R0402_B" value="31.23K" x="34.744571875" y="20.1205" smashed="yes" rot="R90">
+<element name="R34" library="Spark" package="R0402_B" value="31.2K" x="34.744571875" y="20.1205" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.752071875" y="21.8311" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="34.896971875" y="21.0984" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="34.769971875" y="22.2922" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
-<element name="R35" library="Spark" package="R0402_B" value="5.52K" x="33.580059375" y="20.1205" smashed="yes" rot="R270">
+<element name="R35" library="Spark" package="R0402_B" value="5.49K" x="33.580059375" y="20.1205" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.536359375" y="21.8297" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="33.300659375" y="22.5208" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="33.580059375" y="22.1144" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R36" library="Particle" package="R0402_B" value="4K7" x="34.4146" y="15.928" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.9666" y="15.9081" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="34.9607" y="16.69" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="32.9033" y="15.9026" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="U1" library="electron" package="QFN24" value="BQ24195L" x="30.761" y="12.9654" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.5764" y="15.7396" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="32.9134" y="10.467" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="30.8914" y="12.774" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="R2" library="Spark" package="R0402_B" value="10K" x="34.744571875" y="17.7075" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.737471875" y="18.7961" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="34.541371875" y="19.6506" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="34.719171875" y="18.8632" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R3" library="Spark" package="R0402_B" value="10K" x="36.148" y="20.1205" smashed="yes" rot="R270">
 <attribute name="NAME" x="36.1013" y="21.6363" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="35.9702" y="22.0636" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="36.275" y="21.7588" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R10" library="Spark" package="R0402_B" value="10K" x="33.580059375" y="17.7075" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.532559375" y="18.6501" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="33.478459375" y="19.6506" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="33.580059375" y="18.8632" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R44" library="Particle" package="R0402_B" value="1K" x="36.148" y="15.3732" smashed="yes" rot="R90">
 <attribute name="NAME" x="37.0121" y="15.3506" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="36.3004" y="16.3765" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.9354" y="15.3859" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R33" library="Particle" package="R0402_B" value="160R" x="32.421784375" y="17.7075" smashed="yes" rot="R90">
 <attribute name="NAME" x="32.387684375" y="18.8979" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="32.574184375" y="18.6092" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="32.421784375" y="19.3204" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C1" library="Particle" package="C0402_B" value="100pF" x="24.0589" y="20.8564" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.7171" y="20.9495" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="26.7386" y="21.0596" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="22.319" y="20.8818" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C4" library="Particle" package="C0402_B" value="1000pF" x="24.0589" y="19.7296" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.6871" y="19.7203" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="26.5354" y="19.9836" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="22.5374" y="19.869" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C8" library="Particle" package="C0402_B" value="0.1nF" x="24.0589" y="18.6052" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.6155" y="18.6775" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="26.4592" y="18.8084" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="22.5476" y="18.7322" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C9" library="Particle" package="C0402_B" value="0.1nF" x="35.0734" y="11.2022" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.0003" y="12.1756" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="35.2004" y="14.0089" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="34.794" y="12.9421" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="C10" library="Particle" package="C0402_B" value="100pF" x="33.905" y="11.2022" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.9181" y="11.9878" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="32.889" y="12.0023" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="33.786" y="13.0167" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C11" library="Particle" package="C0402_B" value="1000pF" x="33.905" y="8.8278" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.9211" y="7.2348" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="34.0574" y="6.3005" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="33.9558" y="6.7069" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="CONN1" library="particle-studios" library_urn="urn:adsk.eagle:library:10700396" package="1X12_SMD_STRAIGHT" package3d_urn="urn:adsk.eagle:package:32962518/1" value="CON1" x="22" y="21.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.125" y="25.4878" size="1.016" layer="22" font="vector" ratio="15" rot="MR270"/>
@@ -1103,35 +1125,35 @@ design rules under a new name.</description>
 </element>
 <element name="C2" library="particle SZ" package="C-0402" value="47nF" x="29.678" y="9.3154" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.1648" y="9.3286" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="30.908" y="6.6954" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="27.9616" y="9.2608" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C3" library="particle SZ" package="C0603" value="10uF" x="29.3078" y="18.6174" smashed="yes">
 <attribute name="NAME" x="29.932" y="18.6042" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="28.0778" y="21.2374" size="1" layer="27"/>
+<attribute name="VALUE" x="29.3478" y="18.5704" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C72" library="particle SZ" package="C-0402" value="0.1uF" x="29.3078" y="16.5976" smashed="yes">
 <attribute name="NAME" x="27.6968" y="16.5336" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="28.0778" y="19.2176" size="1" layer="27"/>
+<attribute name="VALUE" x="29.3478" y="16.5252" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C73" library="particle SZ" package="C-0402" value="1000pF" x="29.3078" y="17.5172" smashed="yes">
 <attribute name="NAME" x="27.646" y="17.4786" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="28.0778" y="20.1372" size="1" layer="27"/>
+<attribute name="VALUE" x="29.3732" y="17.4448" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C7" library="particle SZ" package="C-0603A" value="10uF,25V" x="29.385" y="4.9314" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.6178" y="4.9192" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="30.615" y="2.3114" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="27.0082" y="4.953" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C17" library="RedBear" package="C0402" value="0.1uF" x="32.134" y="8.4544" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.2188" y="7.4836" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="33.364" y="5.8344" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="32.094" y="8.4506" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C74" library="particle SZ" package="C-0402" value="1000p" x="32.134" y="9.4806" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.1086" y="10.2172" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="34.039" y="11.3856" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="31.9816" y="9.5568" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C49" library="particle SZ" package="C-0603A" value="10uF,25V" x="29.385" y="6.3562" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.4146" y="6.2424" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="30.615" y="3.7362" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="26.9828" y="6.3016" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="U$4" library="particle SZ" package="12PIN_2.54" value="12PIN_2.54" x="21" y="27" smashed="yes" rot="R180">
 <attribute name="NAME" x="37.5354" y="27.889" size="0.6096" layer="21" rot="R180" align="center"/>
@@ -1141,229 +1163,229 @@ design rules under a new name.</description>
 </element>
 <element name="U4" library="SparkFun-PowerIC" package="TDFN-8" value="MAX1704X" x="30.1188" y="20.8266" smashed="yes">
 <attribute name="NAME" x="30.0772" y="20.8826" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="28.1188" y="19.4266" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="30.2016" y="22.3476" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="R54" library="Particle" package="R0402_B" value="1K" x="26.797" y="20.8564" smashed="yes">
 <attribute name="NAME" x="25.4972" y="20.8133" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="25.7175" y="19.7134" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="25.4889" y="20.9072" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C5" library="particle SZ" package="C0402" value="10nF" x="26.797" y="18.6052" smashed="yes" rot="R180">
 <attribute name="NAME" x="25.5798" y="18.611" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="28.702" y="20.5102" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="25.6032" y="18.656" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C6" library="particle SZ" package="C0402" value="1uF" x="26.797" y="21.971" smashed="yes" rot="R180">
 <attribute name="NAME" x="25.569" y="21.9806" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="28.702" y="23.876" size="1.27" layer="27" rot="R180"/>
+<attribute name="VALUE" x="25.6286" y="21.9456" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C12" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C0805" package3d_urn="urn:adsk.eagle:package:21650776/5" value="22uF 10V" x="8.8398" y="17.7309" smashed="yes" rot="R90">
 <attribute name="NAME" x="8.9676" y="20.0953" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="6.2198" y="16.5009" size="1" layer="27" rot="R90"/>
+<attribute name="VALUE" x="8.709" y="17.8217" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C13" library="Particle" package="C0402_B" value="100nF" x="7.3248" y="17.7559" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.3249" y="19.4983" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="6.1818" y="18.8354" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="7.2486" y="19.5974" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
-<element name="R8" library="Spark" package="R0402_B" value="511K" x="3.793" y="4.972" smashed="yes" rot="R180">
+<element name="R8" library="Spark" package="R0402_B" value="1M" x="3.793" y="4.972" smashed="yes" rot="R180">
 <attribute name="NAME" x="2.2326" y="5.0197" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="4.8725" y="6.115" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="2.2563" y="4.972" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
-<element name="R9" library="Spark" package="R0402_B" value="91K" x="3.793" y="8.49" smashed="yes">
+<element name="R9" library="Spark" package="R0402_B" value="180K" x="3.793" y="8.49" smashed="yes">
 <attribute name="NAME" x="2.2922" y="8.5155" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="2.7135" y="7.347" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="2.4341" y="8.5408" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C14" library="Particle" package="C0402_B" value="NC" x="3.793" y="6.1687" smashed="yes" rot="R180">
 <attribute name="NAME" x="2.0726" y="6.2064" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="4.8725" y="7.3117" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="2.5611" y="6.1941" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C15" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C1206" package3d_urn="urn:adsk.eagle:package:21650775/5" value="100uF" x="9.867" y="8.7844" smashed="yes">
 <attribute name="NAME" x="9.847" y="8.7744" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="7.367" y="11.4044" size="1" layer="27"/>
+<attribute name="VALUE" x="9.9832" y="8.8136" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C16" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C-0603A" package3d_urn="urn:adsk.eagle:package:21650847/5" value="22uF" x="6.389" y="6.1687" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.7208" y="6.1803" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="7.619" y="3.5487" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="6.5014" y="6.1141" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C19" library="particle SZ" package="C0402" value="1nF" x="6.389" y="9.697" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.5884" y="9.7078" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="7.619" y="7.077" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="6.476" y="9.7694" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C18" library="particle SZ" package="C0402" value="100pF" x="6.389" y="8.49" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.6114" y="8.5078" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="7.619" y="5.87" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="6.5014" y="8.4608" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
-<element name="L1" library="Particle" package="INDUCTOR-VLS-E" value="1.5uH" x="11.054" y="12.385" smashed="yes" rot="R270"/>
+<element name="L1" library="Particle" package="INDUCTOR-VLS-E" value="2.2uH" x="11.054" y="12.385" smashed="yes" rot="R270"/>
 <element name="U$2" library="particle SZ" package="TPS63020" value="TPS63020" x="6.436" y="12.676" smashed="yes">
 <attribute name="NAME" x="6.46" y="12.592" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="3.936" y="16.566" size="1" layer="27"/>
+<attribute name="VALUE" x="3.6524" y="12.7498" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
-<element name="R17" library="Spark" package="R0402_B" value="511K" x="3.793" y="7.3408" smashed="yes" rot="R180">
+<element name="R17" library="Spark" package="R0402_B" value="24K" x="3.793" y="7.3408" smashed="yes" rot="R180">
 <attribute name="NAME" x="2.1312" y="7.4077" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="4.8725" y="8.4838" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="2.2563" y="7.3916" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C22" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C1206" package3d_urn="urn:adsk.eagle:package:21650775/5" value="100uF 10V" x="11.035" y="18.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.045" y="18.19" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="8.415" y="15.62" size="1" layer="27" rot="R90"/>
+<attribute name="VALUE" x="10.1168" y="18.033" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C23" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C1206" package3d_urn="urn:adsk.eagle:package:21650775/5" value="100uF" x="9.867" y="6.0146" smashed="yes">
 <attribute name="NAME" x="10.087" y="6.2246" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="7.367" y="8.6346" size="1" layer="27"/>
+<attribute name="VALUE" x="10.0848" y="5.993" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C24" library="particle SZ" package="C0402" value="0.1uF" x="6.389" y="7.3408" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.7302" y="7.327" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="7.619" y="4.7208" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="6.5522" y="7.4132" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C25" library="Particle" package="C0402_B" value="100nF" x="3.793" y="9.697" smashed="yes" rot="R180">
 <attribute name="NAME" x="2.1542" y="9.7293" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="4.8725" y="10.84" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="3.8311" y="10.2304" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C26" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C0805" package3d_urn="urn:adsk.eagle:package:21650776/5" value="22uF 10V" x="18.4932" y="17.840996875" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.4294" y="20.161596875" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="15.8732" y="16.610996875" size="1" layer="27" rot="R90"/>
+<attribute name="VALUE" x="18.4894" y="17.703196875" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C27" library="Particle" package="C0402_B" value="100nF" x="16.8582" y="17.865996875" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.8913" y="19.501396875" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="15.7152" y="18.945496875" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="16.7566" y="19.834496875" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
-<element name="R4" library="Spark" package="R0402_B" value="511K" x="13.4148" y="4.845" smashed="yes" rot="R180">
+<element name="R4" library="Spark" package="R0402_B" value="1.1M" x="13.4148" y="4.845" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.0142" y="4.8711" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="14.4943" y="5.988" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="13.7577" y="5.4292" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
-<element name="R5" library="Spark" package="R0402_B" value="91K" x="13.4148" y="8.49" smashed="yes">
+<element name="R5" library="Spark" package="R0402_B" value="180K" x="13.4148" y="8.49" smashed="yes">
 <attribute name="NAME" x="14.1616" y="8.4485" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="12.3353" y="7.347" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="13.4529" y="9.0996" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C28" library="Particle" package="C0402_B" value="NC" x="13.4148" y="6.0834" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.9564" y="6.1049" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="14.4943" y="7.2264" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="13.5291" y="6.693" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C29" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C1206" package3d_urn="urn:adsk.eagle:package:21650775/5" value="100uF" x="20.164" y="6.0146" smashed="yes">
 <attribute name="NAME" x="20.114" y="5.9746" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="17.664" y="8.6346" size="1" layer="27"/>
+<attribute name="VALUE" x="20.204" y="5.9676" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C30" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C-0603A" package3d_urn="urn:adsk.eagle:package:21650847/5" value="22uF" x="15.9758" y="6.0834" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.5694" y="6.048" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="17.2058" y="3.4634" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="15.9612" y="6.1304" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C31" library="particle SZ" package="C0402" value="1nF" x="15.9758" y="9.697" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.487" y="9.6954" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="17.2058" y="7.077" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="16.012" y="9.8202" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C32" library="particle SZ" package="C0402" value="100pF" x="15.9758" y="8.49" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.5216" y="8.4554" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="17.2058" y="5.87" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="16.2152" y="8.5624" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
-<element name="L3" library="Particle" package="INDUCTOR-VLS-E" value="1uH" x="20.39" y="12.667" smashed="yes" rot="R270"/>
+<element name="L3" library="Particle" package="INDUCTOR-VLS-E" value="2.2uH" x="20.39" y="12.667" smashed="yes" rot="R270"/>
 <element name="U$3" library="particle SZ" package="TPS63020" value="TPS63020" x="15.771" y="12.676" smashed="yes">
 <attribute name="NAME" x="15.828" y="12.6316" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="13.271" y="16.566" size="1" layer="27"/>
+<attribute name="VALUE" x="15.811" y="12.8068" size="0.6096" layer="27" align="center"/>
 </element>
-<element name="R6" library="Spark" package="R0402_B" value="511K" x="13.4148" y="7.328" smashed="yes" rot="R180">
+<element name="R6" library="Spark" package="R0402_B" value="62K" x="13.4148" y="7.328" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.112" y="7.3495" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="14.4943" y="8.471" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="13.6815" y="7.8614" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C33" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C1206" package3d_urn="urn:adsk.eagle:package:21650775/5" value="100uF 10V" x="20.8152" y="17.993" smashed="yes" rot="R90">
 <attribute name="NAME" x="20.8322" y="21.642" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="18.1952" y="15.493" size="1" layer="27" rot="R90"/>
+<attribute name="VALUE" x="20.5066" y="18.1346" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C34" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C1206" package3d_urn="urn:adsk.eagle:package:21650775/5" value="100uF" x="20.164" y="8.7844" smashed="yes">
 <attribute name="NAME" x="20.094" y="8.7444" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="17.664" y="11.4044" size="1" layer="27"/>
+<attribute name="VALUE" x="20.2294" y="8.712" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="C35" library="particle SZ" package="C0402" value="0.1uF" x="15.9758" y="7.328" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.3684" y="7.315" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="17.2058" y="4.708" size="1" layer="27" rot="R180"/>
+<attribute name="VALUE" x="16.0374" y="7.4004" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C36" library="Particle" package="C0402_B" value="100nF" x="13.4148" y="9.697" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.109" y="9.7193" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="14.4943" y="10.84" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="13.6561" y="10.459" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R1" library="Spark" package="R0402_B" value="0R" x="31.145546875" y="17.7075" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.132846875" y="19.1045" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="30.002546875" y="18.787" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="31.145546875" y="19.1934" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="C21" library="Particle" package="C0402_B" value="10pF" x="24.0589" y="21.971" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.4841" y="22.0599" size="0.6096" layer="21" rot="R180" align="center"/>
-<attribute name="VALUE" x="25.1384" y="23.114" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="22.3444" y="21.971" size="0.6096" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C20" library="Particle" package="C0402_B" value="2.2uF" x="35.0734" y="8.8278" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.1115" y="7.2276" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="36.2164" y="7.7483" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="35.0988" y="6.6307" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="L14" library="particle SZ" package="R-0603A" value="BLM18SG121TN1D" x="15.9758" y="4.845" smashed="yes">
 <attribute name="NAME" x="16.5746" y="4.8826" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="14.7458" y="7.465" size="1" layer="27"/>
+<attribute name="VALUE" x="18.6828" y="4.4424" size="0.6096" layer="27" align="center"/>
 </element>
 <element name="R7" library="Particle" package="R0402_B" value="150" x="26.797" y="19.7296" smashed="yes">
 <attribute name="NAME" x="25.6286" y="19.6407" size="0.6096" layer="21" align="center"/>
-<attribute name="VALUE" x="25.7175" y="18.5866" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="25.5905" y="19.755" size="0.6096" layer="27" align="center"/>
 </element>
-<element name="R11" library="Particle" package="R0402_B" value="NC" x="36.148" y="17.7075" smashed="yes" rot="R90">
+<element name="R11" library="Particle" package="R0402_B" value="0R" x="36.148" y="17.7075" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.1353" y="18.4695" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="37.291" y="16.628" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="36.148" y="18.9394" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R12" library="Spark" package="R0402_B" value="1M/NC" x="3.556" y="16.129" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.5433" y="14.732" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="2.413" y="17.2085" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="2.8956" y="16.2687" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R13" library="Spark" package="R0402_B" value="0R/NC" x="4.699" y="16.129" smashed="yes" rot="R90">
 <attribute name="NAME" x="4.7371" y="14.7574" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="5.842" y="15.0495" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="4.2418" y="16.1671" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R14" library="Spark" package="R0402_B" value="1M" x="5.842" y="16.129" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.7531" y="14.7574" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="4.699" y="17.2085" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="5.2832" y="16.1417" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
-<element name="R15" library="Spark" package="R0402_B" value="NC" x="5.842" y="18.415" smashed="yes" rot="R90">
+<element name="R15" library="Spark" package="R0402_B" value="1nF" x="5.842" y="18.415" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.9055" y="20.1422" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="6.985" y="17.3355" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="5.842" y="19.6723" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
-<element name="R16" library="Spark" package="R0402_B" value="NC" x="3.556" y="18.415" smashed="yes" rot="R270">
+<element name="R16" library="Spark" package="R0402_B" value="1M" x="3.556" y="18.415" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.5941" y="20.1676" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="2.413" y="19.4945" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="3.5814" y="19.6723" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
-<element name="R18" library="Spark" package="R0402_B" value="1M" x="4.699" y="18.415" smashed="yes" rot="R90">
+<element name="R18" library="Spark" package="R0402_B" value="NC" x="4.699" y="18.415" smashed="yes" rot="R90">
 <attribute name="NAME" x="4.7117" y="20.193" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="5.842" y="17.3355" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="4.6482" y="19.6215" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R19" library="Spark" package="R0402_B" value="1M/NC" x="13.0556" y="17.0434" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.0683" y="17.8054" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="11.9126" y="18.1229" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="13.1318" y="15.0749" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R20" library="Spark" package="R0402_B" value="0R/NC" x="14.1986" y="17.0434" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.1605" y="17.8816" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="15.3416" y="15.9639" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="14.2748" y="15.1511" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R21" library="Spark" package="R0402_B" value="1M" x="15.3416" y="17.0434" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.3543" y="17.8308" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="14.1986" y="18.1229" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="15.2908" y="15.7861" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
-<element name="R22" library="Spark" package="R0402_B" value="NC" x="15.3416" y="19.4564" smashed="yes" rot="R90">
+<element name="R22" library="Spark" package="R0402_B" value="4.7uF" x="15.3416" y="19.4564" smashed="yes" rot="R90">
 <attribute name="NAME" x="15.3797" y="20.32" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="16.4846" y="18.3769" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="15.367" y="20.7137" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
-<element name="R23" library="Spark" package="R0402_B" value="NC" x="13.0556" y="19.4564" smashed="yes" rot="R270">
+<element name="R23" library="Spark" package="R0402_B" value="1M" x="13.0556" y="19.4564" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.0429" y="20.4724" size="0.6096" layer="21" rot="R270" align="center"/>
-<attribute name="VALUE" x="11.9126" y="20.5359" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="13.0302" y="20.6629" size="0.6096" layer="27" rot="R270" align="center"/>
 </element>
-<element name="R24" library="Spark" package="R0402_B" value="1M" x="14.1986" y="19.4564" smashed="yes" rot="R90">
+<element name="R24" library="Spark" package="R0402_B" value="NC" x="14.1986" y="19.4564" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.2113" y="20.4978" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="15.3416" y="18.3769" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="14.1224" y="20.6121" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R25" library="Spark" package="R0402_B" value="0R" x="12.4798625" y="22.0726" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.4417625" y="23.7236" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="13.6228625" y="20.9931" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="12.4798625" y="23.4061" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R26" library="Spark" package="R0402_B" value="0R" x="13.61439375" y="22.0726" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.65249375" y="23.7236" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="14.75739375" y="20.9931" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="13.61439375" y="23.4061" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R27" library="Spark" package="R0402_B" value="0R" x="10.2108" y="22.0726" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.2235" y="23.7236" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="11.3538" y="20.9931" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="10.2362" y="23.4315" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 <element name="R28" library="Spark" package="R0402_B" value="0R" x="11.34533125" y="22.0726" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.30723125" y="23.7236" size="0.6096" layer="21" rot="R90" align="center"/>
-<attribute name="VALUE" x="12.48833125" y="20.9931" size="0.4064" layer="27" rot="R90"/>
+<attribute name="VALUE" x="11.29453125" y="23.4061" size="0.6096" layer="27" rot="R90" align="center"/>
 </element>
 </elements>
 <signals>
@@ -2165,7 +2187,8 @@ design rules under a new name.</description>
 <vertex x="25.273" y="18.923"/>
 <vertex x="25.273" y="20.701" curve="-90"/>
 </polygon>
-<wire x1="20.6792" y1="24.5836" x2="23.27" y2="24.5836" width="1.016" layer="16"/>
+<wire x1="20.6792" y1="24.5836" x2="21.209" y2="24.5836" width="1.016" layer="16"/>
+<wire x1="21.209" y1="24.5836" x2="23.27" y2="24.5836" width="1.016" layer="16"/>
 <wire x1="19.73" y1="25.5328" x2="19.7918" y2="25.471" width="1.016" layer="16"/>
 <wire x1="19.73" y1="26.4" x2="19.73" y2="25.5328" width="1.016" layer="16"/>
 <wire x1="20.73" y1="24.5328" x2="20.2311" y2="25.0317" width="1.016" layer="16"/>
@@ -2198,7 +2221,8 @@ design rules under a new name.</description>
 <via x="36.9062" y="18.1102" extent="1-16" drill="0.2032" diameter="0.4064"/>
 <wire x1="14.65" y1="0.6" x2="14.8278" y2="0.7778" width="1.016" layer="16"/>
 <wire x1="14.8278" y1="4.572" x2="14.8278" y2="3.1496" width="1.016" layer="16"/>
-<wire x1="14.8278" y1="3.1496" x2="14.8278" y2="0.7778" width="1.016" layer="16"/>
+<wire x1="14.8278" y1="3.1496" x2="14.8278" y2="2.4384" width="1.016" layer="16"/>
+<wire x1="14.8278" y1="2.4384" x2="14.8278" y2="0.7778" width="1.016" layer="16"/>
 <wire x1="16.6792" y1="5.0572" x2="16.6792" y2="3.9008" width="1.016" layer="16"/>
 <wire x1="16.73" y1="3.85" x2="16.6792" y2="3.9008" width="1.016" layer="16"/>
 <wire x1="16.194" y1="4.572" x2="15.3924" y2="4.572" width="1.016" layer="16"/>
@@ -2217,7 +2241,8 @@ design rules under a new name.</description>
 <wire x1="36.9062" y1="18.1102" x2="36.6014" y2="17.8054" width="0.3048" layer="15"/>
 <wire x1="36.6014" y1="17.8054" x2="36.6014" y2="14.1732" width="0.3048" layer="15"/>
 <wire x1="36.6014" y1="14.1732" x2="32.0802" y2="9.652" width="0.3048" layer="15"/>
-<wire x1="32.0802" y1="9.652" x2="20.1676" y2="9.652" width="0.3048" layer="15"/>
+<wire x1="32.0802" y1="9.652" x2="22.733" y2="9.652" width="0.3048" layer="15"/>
+<wire x1="22.733" y1="9.652" x2="20.1676" y2="9.652" width="0.3048" layer="15"/>
 <wire x1="20.1676" y1="9.652" x2="15.0114" y2="4.4958" width="0.3048" layer="15"/>
 <wire x1="15.0114" y1="4.2164" x2="15.0114" y2="4.4958" width="0.3048" layer="15"/>
 <wire x1="16.73" y1="3.4798" x2="16.73" y2="3.048" width="0.1524" layer="16"/>
