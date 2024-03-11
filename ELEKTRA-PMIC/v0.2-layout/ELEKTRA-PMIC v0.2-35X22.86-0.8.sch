@@ -5718,16 +5718,6 @@ VFB=0.5V
 </net>
 </nets>
 </sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
 </sheets>
 </schematic>
 </drawing>
