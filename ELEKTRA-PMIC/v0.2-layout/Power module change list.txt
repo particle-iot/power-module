@@ -1,0 +1,5 @@
+Change list:
+1: PCB size becomes smaller, screw holes are removed, size: 35X22.86mm
+2. The connector is changed to Particle half-hole  astellated edges adjacent design, and one more Pin and PCB bevel are added to prevent reverse insertion.
+3.3V3 DC DC is changed to a cheaper DC TPS631011, VCC still uses the original DC DC TPS63020 which current is larger
+4. Add CHG Pin, the power indicator light needs to be on the EVB board and the REGN PIN, battery detection pin, so that customers can configure the resistor by themselves outside.
