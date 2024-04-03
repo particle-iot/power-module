@@ -10,3 +10,4 @@ V0.4 Change list:
 3. An EN_AUX PIN is added to the NC of the connector to control the load switch, and the position of the REGN pin is exchanged to better layout
 4. Update R9, R18, R17 parameters
 5. Some resistors are changed to 0201  footprint
+6.change name as PM-BAT

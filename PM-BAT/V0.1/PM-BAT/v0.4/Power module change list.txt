@@ -1,0 +1,13 @@
+V0.3 Change list:
+1: PCB size becomes smaller, screw holes are removed, size: 35X22.86mm
+2. The connector is changed to Particle half-hole  astellated edges adjacent design, and one more Pin and PCB bevel are added to prevent reverse insertion.
+3.3V3 DC DC is changed to a cheaper DC TPS631011, VCC still uses the original DC DC TPS63020 which current is larger
+4. Add CHG Pin, the power indicator light needs to be on the EVB board and the REGN PIN, battery detection pin, so that customers can configure the resistor by themselves outside.
+
+V0.4 Change list:
+1. Add resistor R13
+2. Add load switch  circuit U5
+3. An EN_AUX PIN is added to the NC of the connector to control the load switch, and the position of the REGN pin is exchanged to better layout
+4. Update R9, R18, R17 parameters
+5. Some resistors are changed to 0201  footprint
+6.change name as PM-BAT
