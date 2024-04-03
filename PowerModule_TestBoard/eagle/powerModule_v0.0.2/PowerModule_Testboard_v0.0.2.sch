@@ -6906,6 +6906,15 @@ Connector</text>
 <label x="94.615" y="113.03" size="1.016" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PMIC_RGEN"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="1" pin="3"/>
+<wire x1="174.625" y1="113.03" x2="159.385" y2="113.03" width="0.1524" layer="91"/>
+<label x="159.385" y="113.03" size="1.016" layer="95"/>
+<pinref part="R1" gate="R1" pin="2"/>
+<wire x1="216.535" y1="104.14" x2="216.535" y2="113.03" width="0.1524" layer="91"/>
+<wire x1="216.535" y1="113.03" x2="174.625" y2="113.03" width="0.1524" layer="91"/>
+<junction x="174.625" y="113.03"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -7055,17 +7064,6 @@ Connector</text>
 <wire x1="147.955" y1="77.47" x2="147.955" y2="100.33" width="0.1524" layer="91"/>
 <junction x="147.955" y="100.33"/>
 <pinref part="U$2" gate="G$1" pin="CHG"/>
-</segment>
-</net>
-<net name="PMIC_REG" class="0">
-<segment>
-<pinref part="SV1" gate="1" pin="3"/>
-<wire x1="174.625" y1="113.03" x2="159.385" y2="113.03" width="0.1524" layer="91"/>
-<label x="159.385" y="113.03" size="1.016" layer="95"/>
-<pinref part="R1" gate="R1" pin="2"/>
-<wire x1="216.535" y1="104.14" x2="216.535" y2="113.03" width="0.1524" layer="91"/>
-<wire x1="216.535" y1="113.03" x2="174.625" y2="113.03" width="0.1524" layer="91"/>
-<junction x="174.625" y="113.03"/>
 </segment>
 </net>
 <net name="+5V" class="0">
