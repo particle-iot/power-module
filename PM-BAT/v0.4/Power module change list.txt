@@ -11,3 +11,4 @@ V0.4 Change list:
 4. Update R9, R18, R17 parameters
 5. Some resistors are changed to 0201  footprint
 6.change name as PM-BAT
+7.change R35 &R34 footprint 0402 as 0201
