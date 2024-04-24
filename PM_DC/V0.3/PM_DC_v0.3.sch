@@ -4252,14 +4252,14 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <part name="R2" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="12K"/>
 <part name="C1" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="CAP" device="0402A" package3d_urn="urn:adsk.eagle:package:21650778/5" value="0.1uF"/>
 <part name="C8" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="CAP" device="0402A" package3d_urn="urn:adsk.eagle:package:21650778/5" value="NC-33pF"/>
-<part name="R3" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="82K"/>
-<part name="R4" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="82K"/>
-<part name="R5" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="39.2K"/>
+<part name="R3" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="76.8K"/>
+<part name="R4" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="100K"/>
+<part name="R5" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="RES" device="0402S" package3d_urn="urn:adsk.eagle:package:21650840/5" value="44.2K"/>
 <part name="C9" library="Particle" deviceset="CAP_1" device="" value="0.1uF"/>
 <part name="C10" library="Particle" deviceset="CAP_1" device="" value="1000pF"/>
 <part name="C11" library="Particle" deviceset="CAP_1" device="" value="0.1uF"/>
 <part name="C12" library="Particle" deviceset="CAP_1" device="" value="1000pF"/>
-<part name="C13" library="Particle" deviceset="CAP_1" device="" value="nc"/>
+<part name="C13" library="Particle" deviceset="CAP_1" device="" value="680pF"/>
 <part name="C14" library="particle SZ" deviceset="CAP" device="C0805" value="10uF"/>
 <part name="C5" library="particle SZ" deviceset="CAP" device="C0805" value="22UF"/>
 <part name="C15" library="particle SZ" deviceset="CAP" device="C1206" value="100uF"/>
@@ -4305,7 +4305,7 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>
-<part name="R9" library="Particle" deviceset="R-US_" device="" value="200K"/>
+<part name="R9" library="Particle" deviceset="R-US_" device="" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -4328,7 +4328,7 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <attribute name="VALUE" x="170.18" y="116.84" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="154.94" y="132.08" smashed="yes">
-<attribute name="VALUE" x="144.78" y="119.38" size="1.778" layer="96"/>
+<attribute name="VALUE" x="146.05" y="118.11" size="1.778" layer="96"/>
 </instance>
 <instance part="GND22" gate="1" x="137.16" y="109.22" smashed="yes">
 <attribute name="VALUE" x="134.62" y="106.68" size="1.778" layer="96"/>
@@ -4481,9 +4481,9 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <attribute name="NAME" x="242.697" y="133.477" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="243.586" y="125.73" size="1.016" layer="96" rot="R270"/>
 </instance>
-<instance part="C13" gate="G$1" x="142.24" y="67.31" smashed="yes" rot="R270">
-<attribute name="NAME" x="144.399" y="65.151" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.431" y="67.818" size="1.778" layer="96"/>
+<instance part="C13" gate="G$1" x="139.7" y="67.31" smashed="yes" rot="R270">
+<attribute name="NAME" x="140.589" y="63.881" size="1.778" layer="95"/>
+<attribute name="VALUE" x="143.891" y="67.818" size="1.778" layer="96"/>
 </instance>
 <instance part="C14" gate="G$1" x="172.72" y="60.96" smashed="yes">
 <attribute name="NAME" x="172.72" y="64.77" size="1.27" layer="95" rot="R90"/>
@@ -4813,7 +4813,7 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <wire x1="119.38" y1="76.2" x2="153.67" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="P$1"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="146.05" y1="67.31" x2="153.67" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="143.51" y1="67.31" x2="153.67" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="153.67" y1="66.04" x2="153.67" y2="67.31" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="78.74" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
@@ -4977,7 +4977,7 @@ Source: &lt;a href="https://www.monolithicpower.com/en/documentview/productdocum
 <wire x1="124.46" y1="71.12" x2="123.19" y2="71.12" width="0.1524" layer="91"/>
 <junction x="123.19" y="71.12"/>
 <pinref part="C13" gate="G$1" pin="P$2"/>
-<wire x1="138.43" y1="67.31" x2="123.19" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="67.31" x2="123.19" y2="67.31" width="0.1524" layer="91"/>
 <junction x="123.19" y="67.31"/>
 </segment>
 </net>

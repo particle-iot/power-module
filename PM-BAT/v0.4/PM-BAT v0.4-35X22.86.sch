@@ -4322,10 +4322,6 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NAME" value="CAP CER X5R 1uF 0402 10V ±10% ROHS"/>
 <attribute name="ITEM_NUMBER" value="PT-200695"/>
 </part>
-<part name="C12" library="particle SZ" deviceset="RES" device="R0603A" value="22uF 10V">
-<attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%"/>
-<attribute name="ITEM_NUMBER" value="120-00060"/>
-</part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R8" library="particle SZ" deviceset="RES" device="R0201-N" value="510K">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402"/>
@@ -4351,7 +4347,7 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NAME" value="100pF 50V X7R 0402 10%"/>
 <attribute name="ITEM_NUMBER" value="PT-200138"/>
 </part>
-<part name="L1" library="Particle" deviceset="INDUCTOR-SPARKFUN" device="INDUCTOR-2520" value="2.2uH">
+<part name="L1" library="Particle" deviceset="INDUCTOR-SPARKFUN" device="INDUCTOR-2520" value="1.5uH">
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>
@@ -4395,7 +4391,7 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NAME" value="100pF 50V X7R 0402 10%"/>
 <attribute name="ITEM_NUMBER" value="PT-200138"/>
 </part>
-<part name="L3" library="Particle" deviceset="INDUCTOR-SPARKFUN" device="INDUCTOR-2520" value="2.2uH">
+<part name="L3" library="Particle" deviceset="INDUCTOR-SPARKFUN" device="INDUCTOR-2520" value="1.5uH">
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>
@@ -4551,6 +4547,10 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 </part>
 <part name="R34" library="particle SZ" deviceset="RES" device="R0201-N" value="49.9K">
 <attribute name="ITEM_NUMBER" value=""/>
+</part>
+<part name="C12" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" deviceset="CAP" device="C0603" package3d_urn="urn:adsk.eagle:package:21650777/5" value="22uF 10V">
+<attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%"/>
+<attribute name="ITEM_NUMBER" value="120-00060"/>
 </part>
 </parts>
 <sheets>
@@ -4779,12 +4779,6 @@ VFB=0.5V
 <attribute name="VALUE" x="245.999" y="94.361" size="1.778" layer="96"/>
 <attribute name="ITEM_NUMBER" x="244.475" y="99.06" size="1.778" layer="96" display="off"/>
 <attribute name="ITEM_NAME" x="244.475" y="99.06" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C12" gate="G$1" x="58.42" y="24.13" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.15" y="28.575" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="57.15" y="15.875" size="1.27" layer="96" rot="R90"/>
-<attribute name="ITEM_NUMBER" x="58.42" y="24.13" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="ITEM_NAME" x="58.42" y="24.13" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="58.42" y="1.27" smashed="yes">
 <attribute name="VALUE" x="55.88" y="-1.27" size="1.778" layer="96"/>
@@ -5193,6 +5187,12 @@ VFB=0.5V
 <attribute name="VALUE" x="160.8836" y="63.5762" size="1.016" layer="96" rot="R90"/>
 <attribute name="ITEM_NUMBER" x="162.56" y="66.04" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
+<instance part="C12" gate="G$1" x="58.42" y="22.86" smashed="yes">
+<attribute name="NAME" x="57.15" y="26.035" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="57.15" y="14.605" size="1.27" layer="96" rot="R90"/>
+<attribute name="ITEM_NUMBER" x="58.42" y="22.86" size="1.778" layer="96" display="off"/>
+<attribute name="ITEM_NAME" x="58.42" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5370,13 +5370,13 @@ VFB=0.5V
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="13.97" x2="58.42" y2="3.81" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="19.05" x2="58.42" y2="13.97" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="13.97" x2="58.42" y2="13.97" width="0.1524" layer="91"/>
 <junction x="58.42" y="13.97"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="13.97" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="20.32" x2="58.42" y2="13.97" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -5971,8 +5971,6 @@ VFB=0.5V
 <wire x1="68.58" y1="34.29" x2="63.5" y2="34.29" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="34.29" x2="58.42" y2="34.29" width="0.1524" layer="91"/>
 <label x="56.4642" y="34.8996" size="1.778" layer="95"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="29.21" x2="58.42" y2="34.29" width="0.1524" layer="91"/>
 <junction x="63.5" y="34.29"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="33.655" x2="81.28" y2="34.29" width="0.1524" layer="91"/>
@@ -5989,6 +5987,8 @@ VFB=0.5V
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="33.401" x2="86.36" y2="34.29" width="0.1524" layer="91"/>
 <junction x="86.36" y="34.29"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="27.94" x2="58.42" y2="34.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="207.01" y1="34.29" x2="201.93" y2="34.29" width="0.1524" layer="91"/>
@@ -6320,6 +6320,16 @@ VFB=0.5V
 <label x="110.49" y="-30.48" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
