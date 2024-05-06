@@ -16,3 +16,6 @@ V0.4 Change list:
 V0.5-20240430 Change list:
 1.Increase the distance between the shield and the connector
 2.Modify silk screen mark
+
+V0.5-2024040506 Change list
+1.add R18 connect to ENABLE，which is reserve for adjustment based on Power consumption testing
