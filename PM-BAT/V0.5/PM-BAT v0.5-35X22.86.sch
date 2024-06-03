@@ -4351,7 +4351,7 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>
-<part name="R17" library="particle SZ" deviceset="RES" device="R0201-N" value="18K">
+<part name="R17" library="particle SZ" deviceset="RES" device="R0201-N" value="0R">
 <attribute name="ITEM_NAME" value="RES SMD 24K OHM 1% 1/16W 0402"/>
 <attribute name="ITEM_NUMBER" value="PT-201025"/>
 </part>
@@ -4425,17 +4425,17 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NUMBER" value="PT-201084"/>
 </part>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R23" library="particle SZ" deviceset="RES" device="R0201-N" value="1M">
+<part name="R23" library="particle SZ" deviceset="RES" device="R0201-N" value="NC">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402"/>
 <attribute name="ITEM_NUMBER" value="PT-201084"/>
 </part>
-<part name="R24" library="particle SZ" deviceset="RES" device="R0201-N" value="NC">
+<part name="R24" library="particle SZ" deviceset="RES" device="R0201-N" value="1M">
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="R28" library="particle SZ" deviceset="RES" device="R0201-N" value="1M">
+<part name="R28" library="particle SZ" deviceset="RES" device="R0201-N" value="100K">
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>
@@ -4499,7 +4499,7 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NUMBER" value="PT-200649"/>
 </part>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="C28" library="particle SZ" deviceset="CAP" device="C0201-N" value="NC">
+<part name="C28" library="particle SZ" deviceset="CAP" device="C0201-N" value="47pF">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms"/>
 <attribute name="ITEM_NUMBER" value="PT-200209"/>
 </part>
@@ -4527,16 +4527,16 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms"/>
 <attribute name="ITEM_NUMBER" value="PT-200209"/>
 </part>
-<part name="C14" library="particle SZ" deviceset="CAP" device="C0201-N" value="NC">
+<part name="C14" library="particle SZ" deviceset="CAP" device="C0201-N" value="47pF">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms"/>
 <attribute name="ITEM_NUMBER" value="PT-200209"/>
 </part>
 <part name="U1" library="ELEKTRA-PMIC v0.3-35X22.86-0.8-0402" deviceset="ELECTRON_BQ24298RTWR" device="" value="BQ24195"/>
-<part name="R16" library="particle SZ" deviceset="RES" device="R0201-N" value="100K">
+<part name="R16" library="particle SZ" deviceset="RES" device="R0201-N" value="NC">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402"/>
 <attribute name="ITEM_NUMBER" value="PT-201084"/>
 </part>
-<part name="R13" library="particle SZ" deviceset="RES" device="R0201-N" value="100K/NC">
+<part name="R13" library="particle SZ" deviceset="RES" device="R0201-N" value="100K">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402"/>
 <attribute name="ITEM_NUMBER" value="PT-201084"/>
 </part>
@@ -4552,7 +4552,7 @@ Power Path Management and Adjustable Voltage USB OTG</description>
 <attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%"/>
 <attribute name="ITEM_NUMBER" value="120-00060"/>
 </part>
-<part name="R18" library="particle SZ" deviceset="RES" device="R0201-N" value="10K">
+<part name="R18" library="particle SZ" deviceset="RES" device="R0201-N" value="NC">
 <attribute name="ITEM_NAME" value=""/>
 <attribute name="ITEM_NUMBER" value=""/>
 </part>

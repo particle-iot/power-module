@@ -8,7 +8,7 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="19.6850394" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="59" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="59" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -25,18 +25,18 @@
 <layer number="15" name="Route15" color="16" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="0" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="0" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="0" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -196,7 +196,6 @@
 </layers>
 <board>
 <plain>
-<text x="9.1924" y="12.3083375" size="0.4064" layer="51" font="vector" rot="R90">NR3015T2R2M</text>
 <wire x1="2" y1="0" x2="34" y2="0" width="0.01" layer="20"/>
 <text x="1.35" y="-2.87" size="1.778" layer="49">40*27mm</text>
 <wire x1="1" y1="22.86" x2="34" y2="22.86" width="0.01" layer="20"/>
@@ -255,6 +254,14 @@
 <wire x1="0" y1="2" x2="2" y2="0" width="0.01" layer="20"/>
 <wire x1="35" y1="21.86" x2="35" y2="1" width="0.01" layer="20"/>
 <wire x1="34" y1="22.86" x2="35" y2="21.86" width="0.01" layer="20" curve="-90"/>
+<text x="3.1242" y="13.6652" size="0.6096" layer="51">L1</text>
+<text x="17.399" y="10.8458" size="0.6096" layer="51">L3</text>
+<text x="35.1028" y="-0.0762" size="0.8128" layer="52" distance="51" rot="MR90">CON2</text>
+<text x="34.8742" y="20.4724" size="0.8128" layer="52" rot="MR90">CON1</text>
+<text x="-1.0414" y="3.5814" size="0.8128" layer="51" rot="R90">SHLD</text>
+<wire x1="0.4572" y1="3.7338" x2="-0.6858" y2="3.7338" width="0.1524" layer="51"/>
+<wire x1="-0.6858" y1="3.7338" x2="-0.889" y2="4.0386" width="0.1524" layer="51"/>
+<wire x1="-0.889" y1="4.0386" x2="-0.889" y2="4.445" width="0.1524" layer="51"/>
 </plain>
 <libraries>
 <library name="Particle">
@@ -1660,239 +1667,239 @@ design rules under a new name.</description>
 <element name="C57" library="particle SZ" package="C-0603A" value="10uF" x="31.2928" y="5.472721875" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 100PF 50V C0G/NP0 0603 5%" x="31.2928" y="5.472721875" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200458" x="31.2928" y="5.472721875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="32.8636" y="5.500621875" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="31.486834375" y="5.36776875" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="33.1684" y="5.424421875" size="0.6096" layer="51" align="center"/>
+<attribute name="VALUE" x="31.486834375" y="5.36776875" size="1.016" layer="27" align="center"/>
 </element>
 <element name="C58" library="particle SZ" package="C0402" value="0.1uF" x="22.30481875" y="11.81425625" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="22.30481875" y="11.81425625" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="22.30481875" y="11.81425625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="20.36141875" y="11.86375625" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="22.36831875" y="11.81425625" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="20.36141875" y="11.83835625" size="0.6096" layer="51" align="center"/>
+<attribute name="VALUE" x="22.36831875" y="11.81425625" size="1.016" layer="27" align="center"/>
 </element>
 <element name="C59" library="particle SZ" package="C0603" value="22uF" x="22.30481875" y="12.91265625" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="22.30481875" y="12.91265625" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="22.30481875" y="12.91265625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="20.38061875" y="12.90055625" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="22.39371875" y="12.93805625" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="20.40601875" y="12.95135625" size="0.6096" layer="51" align="center"/>
+<attribute name="VALUE" x="22.39371875" y="12.93805625" size="1.016" layer="27" align="center"/>
 </element>
 <element name="L7" library="Particle" package="INDUCTOR-4040" value="2.2uH" x="21.704828125" y="7.651240625" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="FIXED IND 1UH 5.8A 26 MOHM SMD 4020" x="21.704828125" y="7.651240625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="155-00005" x="21.704828125" y="7.651240625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="21.784828125" y="7.627040625" size="0.6096" layer="51" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="21.780628125" y="7.661040625" size="0.6096" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="21.633759375" y="7.586228125" size="0.6096" layer="51" font="vector" rot="R180" align="center"/>
+<attribute name="VALUE" x="21.780628125" y="7.661040625" size="1.016" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="R30" library="Particle" package="R0402_B" value="4K7" x="31.2928" y="10.050509375" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="RES SMD 4K7 OHM 5% 1/16W 0402" x="31.2928" y="10.050509375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200230" x="31.2928" y="10.050509375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="30.0088" y="10.071409375" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="31.209690625" y="10.130265625" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="32.8536" y="10.046009375" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.209690625" y="10.130265625" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R36" library="Particle" package="R0402_B" value="4K7" x="31.2928" y="11.103609375" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="RES SMD 4K7 OHM 5% 1/16W 0402" x="31.2928" y="11.103609375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200230" x="31.2928" y="11.103609375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="29.8448" y="11.083709375" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="31.4189375" y="11.153315625" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="32.842" y="11.109109375" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.4189375" y="11.153315625" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R2" library="Spark" package="R0402_B" value="10K" x="31.2928" y="12.12698125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="10K OHM 5% 1/16W 0402" x="31.2928" y="12.12698125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200004" x="31.2928" y="12.12698125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="32.3814" y="12.13408125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="31.396940625" y="12.12985" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="32.6354" y="12.10868125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.396940625" y="12.12985" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R3" library="Spark" package="R0402_B" value="10K" x="31.2928" y="13.156225" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="10K OHM 5% 1/16W 0402" x="31.2928" y="13.156225" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200004" x="31.2928" y="13.156225" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="32.8086" y="13.202925" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="31.48144375" y="13.17195" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="32.6816" y="13.152125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.48144375" y="13.17195" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R10" library="Spark" package="R0402_B" value="10K" x="27.153575" y="14.7945875" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="10K OHM 5% 1/16W 0402" x="27.153575" y="14.7945875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200004" x="27.153575" y="14.7945875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="27.106075" y="15.7371875" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="27.126525" y="14.94963125" size="0.6096" layer="27" rot="R270" align="center"/>
+<attribute name="NAME" x="27.131475" y="13.5273875" size="0.4064" layer="51" rot="R270" align="center"/>
+<attribute name="VALUE" x="27.126525" y="14.94963125" size="1.016" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R33" library="Particle" package="R0402_B" value="160R" x="26.1259625" y="14.7945875" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="" x="26.1259625" y="14.7945875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="26.1259625" y="14.7945875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="26.0918625" y="15.9849875" size="0.6096" layer="51" rot="R90" align="center"/>
-<attribute name="VALUE" x="25.945671875" y="14.820878125" size="0.6096" layer="27" rot="R90" align="center"/>
+<attribute name="NAME" x="26.0918625" y="13.4957875" size="0.4064" layer="51" rot="R90" align="center"/>
+<attribute name="VALUE" x="25.945671875" y="14.820878125" size="1.016" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C1" library="Particle" package="C0402_B" value="100pF" x="14.604146875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 100pF 50V X7R 0402 10%" x="14.604146875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200138" x="14.604146875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="14.511046875" y="15.4660125" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="14.59375625" y="16.87811875" size="0.6096" layer="27" rot="R270" align="center"/>
+<attribute name="VALUE" x="14.59375625" y="16.87811875" size="1.016" layer="27" rot="R270" align="center"/>
 </element>
 <element name="C4" library="Particle" package="C0402_B" value="1000pF" x="15.630946875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 1000PF 50V X7R 0402 10%" x="15.630946875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="15.630946875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="15.640246875" y="15.4360125" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="15.626753125" y="17.01391875" size="0.6096" layer="27" rot="R90" align="center"/>
+<attribute name="VALUE" x="15.626753125" y="17.01391875" size="1.016" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C8" library="Particle" package="C0402_B" value="0.1nF" x="16.655346875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%" x="16.655346875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200649" x="16.655346875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="16.583046875" y="15.3644125" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="16.610971875" y="16.843828125" size="0.6096" layer="27" rot="R270" align="center"/>
+<attribute name="VALUE" x="16.610971875" y="16.843828125" size="1.016" layer="27" rot="R270" align="center"/>
 </element>
 <element name="C9" library="Particle" package="C0402_B" value="0.1uF" x="31.2928" y="7.989434375" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER  0.1UF 25V X7R 0402 20%" x="31.2928" y="7.989434375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200690" x="31.2928" y="7.989434375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="32.2662" y="8.062534375" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="31.41779375" y="8.043484375" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="32.6218" y="8.011734375" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.41779375" y="8.043484375" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C11" library="Particle" package="C0402_B" value="1000pF" x="31.2928" y="9.026965625" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 1000PF 50V X7R 0402 10%" x="31.2928" y="9.026965625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200631" x="31.2928" y="9.026965625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="32.8858" y="9.043065625" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="31.81383125" y="9.10029375" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="32.835" y="9.043065625" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="31.81383125" y="9.10029375" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C2" library="particle SZ" package="C-0402" value="47nF" x="25.39846875" y="7.5185625" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 0.1uF 16V X7R 0402 10%" x="25.39846875" y="7.5185625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200005" x="25.39846875" y="7.5185625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="23.88526875" y="7.5317625" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="25.164259375" y="7.496425" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="24.19006875" y="7.5571625" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="25.164259375" y="7.496425" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C3" library="particle SZ" package="C0805" value="10uF" x="23.722509375" y="17.172003125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="23.722509375" y="17.172003125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="23.722509375" y="17.172003125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="23.098309375" y="17.185203125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="23.682509375" y="17.219003125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="23.631709375" y="18.455203125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="23.682509375" y="17.219003125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C72" library="particle SZ" package="C-0402" value="0.1uF" x="23.544509375" y="14.475021875" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%" x="23.544509375" y="14.475021875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200649" x="23.544509375" y="14.475021875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="25.155509375" y="14.539021875" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="23.504509375" y="14.547421875" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="24.825309375" y="14.462821875" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="23.504509375" y="14.547421875" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C73" library="particle SZ" package="C-0402" value="1000pF" x="23.544509375" y="15.435021875" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="1000PF 50V X7R 0402 10%" x="23.544509375" y="15.435021875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200631" x="23.544509375" y="15.435021875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="25.206309375" y="15.473621875" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="23.479109375" y="15.507421875" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="24.825309375" y="15.422821875" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="23.479109375" y="15.507421875" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C17" library="RedBear" package="C0402" value="0.1uF" x="27.68753125" y="6.4581625" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER  0.1UF 25V X7R 0402 20%" x="27.68753125" y="6.4581625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200690" x="27.68753125" y="6.4581625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="27.77233125" y="5.4873625" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="27.94445625" y="6.540925" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="29.29633125" y="6.4779625" size="0.6096" layer="51" align="center"/>
+<attribute name="VALUE" x="27.94445625" y="6.540925" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C74" library="particle SZ" package="C-0402" value="1000p" x="27.68753125" y="7.4677625" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 1000PF 50V X7R 0402 10%" x="27.68753125" y="7.4677625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200631" x="27.68753125" y="7.4677625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="27.66213125" y="8.2043625" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="27.98580625" y="7.66413125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="29.23693125" y="7.4677625" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="27.98580625" y="7.66413125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C49" library="particle SZ" package="C-0603A" value="10uF,25V" x="27.68753125" y="5.3212375" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 100PF 50V C0G/NP0 0603 5%" x="27.68753125" y="5.3212375" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200458" x="27.68753125" y="5.3212375" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="29.65793125" y="5.4350375" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="28.362175" y="5.330778125" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="29.53093125" y="5.3080375" size="0.6096" layer="51" align="center"/>
+<attribute name="VALUE" x="28.362175" y="5.330778125" size="1.016" layer="27" align="center"/>
 </element>
 <element name="R54" library="Particle" package="R0402_B" value="1K" x="28.820909375" y="16.416871875" smashed="yes">
 <attribute name="ITEM_NAME" value="RES SMD 1K OHM 5% 1/16W 0402" x="28.820909375" y="16.416871875" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200002" x="28.820909375" y="16.416871875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.521109375" y="16.373771875" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="28.945978125" y="16.5037375" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="27.571909375" y="16.424571875" size="0.4064" layer="51" align="center"/>
+<attribute name="VALUE" x="28.945978125" y="16.5037375" size="1.016" layer="27" align="center"/>
 </element>
 <element name="C5" library="particle SZ" package="C0402" value="10nF" x="29.301671875" y="14.7945875" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="CAP CER 10nF 16V X5R 0402 10%" x="29.301671875" y="14.7945875" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200136" x="29.301671875" y="14.7945875" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.307471875" y="16.0117875" size="0.6096" layer="51" rot="R90" align="center"/>
-<attribute name="VALUE" x="29.3885125" y="14.94264375" size="0.6096" layer="27" rot="R90" align="center"/>
+<attribute name="NAME" x="29.282071875" y="13.6241875" size="0.4064" layer="51" rot="R90" align="center"/>
+<attribute name="VALUE" x="29.3885125" y="14.94264375" size="1.016" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C6" library="particle SZ" package="C0402" value="1uF" x="28.820909375" y="17.355271875" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER X5R 1uF 0402 10V ±10% ROHS" x="28.820909375" y="17.355271875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200695" x="28.820909375" y="17.355271875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="27.592909375" y="17.364871875" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="28.72515" y="17.3388875" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="27.669109375" y="17.390271875" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="28.72515" y="17.3388875" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R8" library="particle SZ" package="R0201-N" value="510K" x="9.4615" y="13.8678" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402" x="9.4615" y="13.8678" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201084" x="9.4615" y="13.8678" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="7.9011" y="13.9155" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="9.5655125" y="13.93089375" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="8.3583" y="13.8393" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="9.5655125" y="13.93089375" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R9" library="particle SZ" package="R0201-N" value="91K" x="9.4615" y="11.4046" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="" x="9.4615" y="11.4046" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="9.4615" y="11.4046" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.9623" y="11.3791" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="9.453903125" y="11.415140625" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="10.5813" y="11.4045" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="9.453903125" y="11.415140625" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C16" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C-0603A" package3d_urn="urn:adsk.eagle:package:21650847/5" value="22uF" x="3.29838125" y="8.06553125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 22UF 10V X5R 0603 20%" x="3.29838125" y="8.06553125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="120-00061" x="3.29838125" y="8.06553125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.63018125" y="8.07713125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="3.3199" y="7.84215" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="5.07798125" y="8.02633125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="3.3199" y="7.84215" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C19" library="particle SZ" package="C0402" value="1nF" x="3.29838125" y="6.99643125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="1000PF 50V X7R 0402 10%" x="3.29838125" y="6.99643125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200631" x="3.29838125" y="6.99643125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.49778125" y="7.00723125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="3.2945" y="7.055853125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="4.99638125" y="7.00723125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="3.2945" y="7.055853125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C18" library="particle SZ" package="C0402" value="100pF" x="3.29838125" y="6.07233125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="100pF 50V X7R 0402 10%" x="3.29838125" y="6.07233125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200138" x="3.29838125" y="6.07233125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.52078125" y="6.09013125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="3.2160125" y="6.121034375" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="4.99398125" y="6.11553125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="3.2160125" y="6.121034375" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="L1" library="Particle" package="INDUCTOR-2520" value="1.5uH" x="3.5563" y="13.953725" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="" x="3.5563" y="13.953725" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="3.5563" y="13.953725" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R17" library="particle SZ" package="R0201-N" value="18K" x="9.4615" y="13.0402" smashed="yes">
+<element name="R17" library="particle SZ" package="R0201-N" value="0R" x="9.4615" y="13.0402" smashed="yes">
 <attribute name="ITEM_NAME" value="RES SMD 24K OHM 1% 1/16W 0402" x="9.4615" y="13.0402" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201025" x="9.4615" y="13.0402" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="11.1233" y="12.9733" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="9.4748875" y="13.17870625" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="8.1769" y="13.0241" size="0.6096" layer="51" align="center"/>
+<attribute name="VALUE" x="9.4748875" y="13.17870625" size="1.016" layer="27" align="center"/>
 </element>
 <element name="C24" library="particle SZ" package="C0402" value="0.1uF" x="3.29838125" y="5.14823125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="0.1UF 16V X7R 0402 10%" x="3.29838125" y="5.14823125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200649" x="3.29838125" y="5.14823125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.63958125" y="5.13443125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="3.085053125" y="5.22063125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="4.98578125" y="5.13443125" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="3.085053125" y="5.22063125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C26" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C0603" package3d_urn="urn:adsk.eagle:package:21650777/5" value="22uF 10V" x="17.9424" y="16.80654375" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%" x="17.9424" y="16.80654375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="120-00060" x="17.9424" y="16.80654375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="17.8786" y="19.12714375" size="0.6096" layer="51" rot="R90" align="center"/>
-<attribute name="VALUE" x="17.91606875" y="16.803946875" size="0.6096" layer="27" rot="R90" align="center"/>
+<attribute name="NAME" x="17.9294" y="14.73294375" size="0.6096" layer="51" rot="R90" align="center"/>
+<attribute name="VALUE" x="17.91606875" y="16.803946875" size="1.016" layer="27" rot="R90" align="center"/>
 </element>
 <element name="C27" library="Particle" package="C0402_B" value="100nF" x="12.53041875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%" x="12.53041875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200649" x="12.53041875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="12.56351875" y="18.4432125" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="12.488915625" y="17.01868125" size="0.6096" layer="27" rot="R270" align="center"/>
+<attribute name="NAME" x="12.56351875" y="15.2682125" size="0.6096" layer="51" rot="R270" align="center"/>
+<attribute name="VALUE" x="12.488915625" y="17.01868125" size="1.016" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R4" library="particle SZ" package="R0201-N" value="1.1M" x="11.3689" y="6.724303125" smashed="yes" rot="R180">
 <attribute name="ITEM_NUMBER" value="" x="11.3689" y="6.724303125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="11.9683" y="6.750403125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="11.522515625" y="6.7405625" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="10.4443" y="6.725003125" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="11.522515625" y="6.7405625" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="R5" library="particle SZ" package="R0201-N" value="180K" x="11.3689" y="9.175503125" smashed="yes">
 <attribute name="ITEM_NAME" value="" x="11.3689" y="9.175503125" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="11.3689" y="9.175503125" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="12.1157" y="9.134003125" size="0.6096" layer="51" align="center"/>
-<attribute name="VALUE" x="11.452059375" y="9.259321875" size="0.6096" layer="27" align="center"/>
+<attribute name="NAME" x="10.4901" y="9.159403125" size="0.4064" layer="51" align="center"/>
+<attribute name="VALUE" x="11.452059375" y="9.259321875" size="1.016" layer="27" align="center"/>
 </element>
 <element name="C30" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C-0603A" package3d_urn="urn:adsk.eagle:package:21650847/5" value="22uF" x="13.338215625" y="5.96331875" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 22UF 10V X5R 0603 20%" x="13.338215625" y="5.96331875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="120-00061" x="13.338215625" y="5.96331875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.931815625" y="5.92791875" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="13.323615625" y="6.01031875" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="13.271415625" y="5.06431875" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="13.323615625" y="6.01031875" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C31" library="particle SZ" package="C0402" value="1nF" x="13.389015625" y="9.137903125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="1000PF 50V X7R 0402 10%" x="13.389015625" y="9.137903125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200631" x="13.389015625" y="9.137903125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.900215625" y="9.136303125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="13.425215625" y="9.261103125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="12.249215625" y="9.161703125" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="13.425215625" y="9.261103125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C32" library="particle SZ" package="C0402" value="100pF" x="13.338215625" y="8.108703125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="100pF 50V X7R 0402 10%" x="13.338215625" y="8.108703125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200138" x="13.338215625" y="8.108703125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.884015625" y="8.074103125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="13.577615625" y="8.181103125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="12.131415625" y="8.124903125" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="13.577615625" y="8.181103125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="L3" library="Particle" package="INDUCTOR-2520" value="1.5uH" x="17.8016625" y="11.091653125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="" x="17.8016625" y="11.091653125" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1902,100 +1909,99 @@ design rules under a new name.</description>
 <attribute name="ITEM_NAME" value="" x="13.39175625" y="12.432834375" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="13.39175625" y="12.432834375" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="13.44875625" y="12.388434375" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="13.350628125" y="12.302215625" size="0.6096" layer="27" align="center"/>
+<attribute name="VALUE" x="13.350628125" y="12.302215625" size="1.016" layer="27" align="center"/>
 </element>
 <element name="R6" library="particle SZ" package="R0201-N" value="62K" x="11.3689" y="8.369103125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="" x="11.3689" y="8.369103125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="11.3689" y="8.369103125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="12.0661" y="8.390603125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="11.5364375" y="8.397653125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="10.4913" y="8.365203125" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="11.5364375" y="8.397653125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C35" library="particle SZ" package="C0402" value="0.1uF" x="13.338215625" y="7.073703125" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="0.1UF 16V X7R 0402 10%" x="13.338215625" y="7.073703125" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200649" x="13.338215625" y="7.073703125" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="13.730815625" y="7.060703125" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="13.399815625" y="7.146103125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="12.105215625" y="7.086103125" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="13.399815625" y="7.146103125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="C21" library="Particle" package="C0402_B" value="10pF" x="13.564146875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 10PF 5% 50V C0G/NP0 0402" x="13.564146875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="120-00038" x="13.564146875" y="16.8078125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="13.475246875" y="15.2330125" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="13.51156875" y="16.91855625" size="0.6096" layer="27" rot="R270" align="center"/>
+<attribute name="NAME" x="13.627646875" y="15.2838125" size="0.6096" layer="51" rot="R270" align="center"/>
+<attribute name="VALUE" x="13.51156875" y="16.91855625" size="1.016" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R7" library="Particle" package="R0402_B" value="150" x="28.369471875" y="14.7945875" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="" x="28.369471875" y="14.7945875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="28.369471875" y="14.7945875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="28.280571875" y="15.9629875" size="0.6096" layer="51" rot="R270" align="center"/>
-<attribute name="VALUE" x="28.421921875" y="14.441528125" size="0.6096" layer="27" rot="R270" align="center"/>
+<attribute name="NAME" x="28.382171875" y="13.6261875" size="0.4064" layer="51" rot="R270" align="center"/>
+<attribute name="VALUE" x="28.421921875" y="14.441528125" size="1.016" layer="27" rot="R270" align="center"/>
 </element>
 <element name="R14" library="particle SZ" package="R0201-N" value="100K" x="4.40331875" y="16.2727" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402" x="4.40331875" y="16.2727" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201084" x="4.40331875" y="16.2727" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.03171875" y="16.3616" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="4.427675" y="16.371659375" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="3.53971875" y="16.2854" size="0.4064" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="4.427675" y="16.371659375" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
-<element name="R23" library="particle SZ" package="R0201-N" value="1M" x="5.84788125" y="16.2727" smashed="yes" rot="R180">
+<element name="R23" library="particle SZ" package="R0201-N" value="NC" x="5.84788125" y="16.2727" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402" x="5.84788125" y="16.2727" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201084" x="5.84788125" y="16.2727" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="6.86388125" y="16.2854" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="5.838103125" y="16.277628125" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="7.29568125" y="16.26" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="5.838103125" y="16.277628125" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
-<element name="R24" library="particle SZ" package="R0201-N" value="NC" x="5.5452" y="17.56768125" smashed="yes" rot="R90">
+<element name="R24" library="particle SZ" package="R0201-N" value="1M" x="5.5452" y="17.56768125" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="" x="5.5452" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="5.5452" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="5.5579" y="18.60908125" size="0.6096" layer="51" rot="R90" align="center"/>
-<attribute name="VALUE" x="5.44093125" y="17.4806875" size="0.6096" layer="27" rot="R90" align="center"/>
+<attribute name="NAME" x="5.5325" y="18.99008125" size="0.6096" layer="51" rot="R90" align="center"/>
+<attribute name="VALUE" x="5.44093125" y="17.4806875" size="1.016" layer="27" rot="R90" align="center"/>
 </element>
-<element name="R28" library="particle SZ" package="R0201-N" value="1M" x="2.6566" y="17.084040625" smashed="yes" rot="R180">
+<element name="R28" library="particle SZ" package="R0201-N" value="100K" x="2.6566" y="17.084040625" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="" x="2.6566" y="17.084040625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="2.6566" y="17.084040625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="1.0056" y="17.045940625" size="0.6096" layer="51" rot="R180" align="center"/>
-<attribute name="VALUE" x="2.594015625" y="17.0783" size="0.6096" layer="27" rot="R180" align="center"/>
+<attribute name="NAME" x="1.1834" y="17.122140625" size="0.6096" layer="51" rot="R180" align="center"/>
+<attribute name="VALUE" x="2.594015625" y="17.0783" size="1.016" layer="27" rot="R180" align="center"/>
 </element>
 <element name="U3" library="particle SZ" package="DSBGA" value="TPS631011" x="7.005303125" y="13.201615625" smashed="yes">
-<attribute name="NAME" x="6.104103125" y="11.743015625" size="0.6096" layer="51" rot="R90"/>
-<attribute name="VALUE" x="4.591640625" y="12.911259375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="6.078703125" y="12.708215625" size="0.6096" layer="51" rot="R90"/>
+<attribute name="VALUE" x="4.591640625" y="12.911259375" size="1.016" layer="27"/>
 </element>
 <element name="C37" library="particle SZ" package="C0402" value="4.7uF" x="25.9268375" y="6.01826875" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="25.9268375" y="6.01826875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="25.9268375" y="6.01826875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="27.3868375" y="7.24826875" size="0.6096" layer="51" rot="R270"/>
-<attribute name="VALUE" x="25.6700875" y="6.79604375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="24.8468375" y="6.74026875" size="0.6096" layer="51" rot="R270"/>
+<attribute name="VALUE" x="25.6700875" y="6.79604375" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="J1" library="Particle" package="1X13-CASTELLATED" value="M13PTH-CST-R" x="17.78" y="21.59" smashed="yes" rot="R90"/>
 <element name="C100" library="particle SZ" package="CASE-B" value="220uF,10V" x="20.4268" y="16.0206" smashed="yes">
-<attribute name="NAME" x="23.0068" y="16.2106" size="0.6096" layer="51"/>
-<attribute name="VALUE" x="20.67824375" y="14.4722375" size="0.6096" layer="27" rot="R90"/>
+<attribute name="NAME" x="19.527" y="15.7534" size="0.6096" layer="51"/>
+<attribute name="VALUE" x="20.67824375" y="14.4722375" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="C101" library="particle SZ" package="CASE-B" value="220uF.6V" x="4.0394" y="10.414" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.8494" y="12.994" size="0.6096" layer="51" rot="R90"/>
-<attribute name="VALUE" x="5.75470625" y="11.585953125" size="0.6096" layer="27" rot="R180"/>
+<attribute name="NAME" x="4.8114" y="10.6566" size="0.6096" layer="51" rot="R180"/>
+<attribute name="VALUE" x="5.75470625" y="11.585953125" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C102" library="particle SZ" package="CASE-B" value="220uF,6V" x="16.8942" y="6.7056" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.0842" y="4.1256" size="0.6096" layer="51" rot="R270"/>
-<attribute name="VALUE" x="15.6410875" y="6.67569375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="15.8134" y="8.4736" size="0.6096" layer="51"/>
+<attribute name="VALUE" x="15.6410875" y="6.67569375" size="1.016" layer="27"/>
 </element>
 <element name="C15" library="particle SZ" package="C-0603A" value="2.2uF,25V" x="31.2928" y="6.731" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 100PF 50V C0G/NP0 0603 5%" x="31.2928" y="6.731" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200458" x="31.2928" y="6.731" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="30.0628" y="8.191" size="0.6096" layer="51"/>
-<attribute name="VALUE" x="30.505978125" y="6.451615625" size="0.6096" layer="27"/>
+<attribute name="NAME" x="32.3742" y="6.54" size="0.6096" layer="51"/>
+<attribute name="VALUE" x="30.505978125" y="6.451615625" size="1.016" layer="27"/>
 </element>
 <element name="C23" library="Particle" package="C0402_B" value="1000pF" x="11.48841875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 1000PF 50V X7R 0402 10%" x="14.43481875" y="19.5256125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="14.43481875" y="19.5256125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="12.18691875" y="17.6968125" size="0.6096" layer="51" rot="R270"/>
-<attribute name="VALUE" x="11.179175" y="18.36803125" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="11.22171875" y="15.9950125" size="0.6096" layer="51" rot="R270"/>
+<attribute name="VALUE" x="11.179175" y="18.36803125" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="C29" library="Particle" package="C0402_B" value="10pF" x="10.45971875" y="16.8078125" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 10PF 5% 50V C0G/NP0 0402" x="16.35251875" y="22.2434125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="120-00038" x="16.35251875" y="22.2434125" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="11.15821875" y="17.6968125" size="0.6096" layer="51" rot="R270"/>
-<attribute name="VALUE" x="10.218065625" y="17.759625" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="10.21841875" y="15.9950125" size="0.6096" layer="51" rot="R270"/>
+<attribute name="VALUE" x="10.218065625" y="17.759625" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="J2" library="Particle" package="1X12-CASTELLATED" value="M12PTH-CST-R" x="19.05" y="1.27" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.8788" y="2.6162" size="0.6096" layer="51" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="13.208965625" y="4.152646875" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="13.208965625" y="4.152646875" size="1.016" layer="27"/>
 </element>
 <element name="TP1" library="particle SZ" package="TP-1311MM" value="TP1311MM" x="32.96865" y="11.697715625" smashed="yes" rot="MR180"/>
 <element name="TP2" library="particle SZ" package="TP-1311MM" value="TP1311MM" x="30.96865" y="11.697715625" smashed="yes" rot="MR180"/>
@@ -2004,128 +2010,128 @@ design rules under a new name.</description>
 <element name="U$4" library="Particle" package="TP_2.33X1.37" value="TP" x="18.5" y="11.43" smashed="yes" rot="MR0"/>
 <element name="U$5" library="Particle" package="TP_2.33X1.37" value="TP" x="26.5" y="11.43" smashed="yes" rot="MR0"/>
 <element name="U5" library="particle SZ" package="SOT-23-6" value="TPS22918" x="8.636" y="8.6614" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.096" y="11.1614" size="0.8128" layer="51" rot="R270"/>
-<attribute name="VALUE" x="11.256" y="11.1614" size="1" layer="27" rot="R270"/>
+<attribute name="NAME" x="8.1426" y="8.318" size="0.6096" layer="51"/>
+<attribute name="VALUE" x="11.256" y="11.1614" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="C7" library="particle SZ" package="C0402" value="1000pF,25V" x="7.6708" y="5.5424" smashed="yes" rot="R270">
 <attribute name="ITEM_NAME" value="CAP CER 100PF 50V C0G/NP0 0603 5%" x="7.6708" y="5.5424" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200458" x="7.6708" y="5.5424" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="9.1308" y="6.7724" size="0.8128" layer="51" rot="R270"/>
-<attribute name="VALUE" x="10.2908" y="6.7724" size="1" layer="27" rot="R270"/>
+<attribute name="NAME" x="6.4892" y="6.0866" size="0.6096" layer="51" rot="R270"/>
+<attribute name="VALUE" x="10.2908" y="6.7724" size="1.016" layer="27" rot="R270"/>
 </element>
 <element name="R1" library="particle SZ" package="R0201-N" value="100K" x="8.0518" y="11.4046" smashed="yes">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402" x="5.1308" y="14.351" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201084" x="5.1308" y="14.351" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7.1628" y="12.1031" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="6.9723" y="10.2616" size="0.4064" layer="27"/>
+<attribute name="NAME" x="6.4008" y="11.1125" size="0.6096" layer="51"/>
+<attribute name="VALUE" x="6.9723" y="10.2616" size="1.016" layer="27"/>
 </element>
 <element name="R11" library="particle SZ" package="R0201-N" value="10K" x="8.5344" y="5.5424" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="10K OHM 5% 1/16W 0402" x="5.588" y="2.6214" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200004" x="5.588" y="2.6214" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="7.8359" y="4.6534" size="0.8128" layer="51" rot="R90"/>
-<attribute name="VALUE" x="9.6774" y="4.4629" size="0.4064" layer="27" rot="R90"/>
+<attribute name="NAME" x="9.5885" y="4.882" size="0.6096" layer="51" rot="R90"/>
+<attribute name="VALUE" x="9.6774" y="4.4629" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="R12" library="particle SZ" package="R0201-N" value="10K/NC" x="11.3689" y="5.0546" smashed="yes">
 <attribute name="ITEM_NAME" value="10K OHM 5% 1/16W 0402" x="8.4479" y="8.001" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200004" x="8.4479" y="8.001" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.4799" y="5.7531" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="10.2894" y="3.9116" size="0.4064" layer="27"/>
+<attribute name="NAME" x="9.8195" y="4.8895" size="0.4064" layer="51"/>
+<attribute name="VALUE" x="10.2894" y="3.9116" size="1.016" layer="27"/>
 </element>
 <element name="C10" library="particle SZ" package="C0201-N" value="0.1uF" x="11.3689" y="5.8674" smashed="yes">
 <attribute name="ITEM_NAME" value="0.1UF 16V X7R 0402 10%" x="11.3689" y="5.8674" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200649" x="11.3689" y="5.8674" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.1389" y="7.3274" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="10.1389" y="8.4874" size="1" layer="27"/>
+<attribute name="NAME" x="9.8341" y="5.651" size="0.4064" layer="51"/>
+<attribute name="VALUE" x="10.1389" y="8.4874" size="1.016" layer="27"/>
 </element>
-<element name="C28" library="particle SZ" package="C0201-N" value="NC" x="11.3689" y="7.5438" smashed="yes">
+<element name="C28" library="particle SZ" package="C0201-N" value="47pF" x="11.3689" y="7.5438" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="11.3689" y="7.5438" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="11.3689" y="7.5438" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.1389" y="9.0038" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="10.1389" y="10.1638" size="1" layer="27"/>
+<attribute name="NAME" x="9.8087" y="7.302" size="0.4064" layer="51"/>
+<attribute name="VALUE" x="10.1389" y="10.1638" size="1.016" layer="27"/>
 </element>
 <element name="C36" library="particle SZ" package="C0201-N" value="100nF" x="11.3689" y="9.9822" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="11.3689" y="9.9822" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="11.3689" y="9.9822" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.7339" y="10.6172" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="10.7339" y="8.0772" size="1.27" layer="27"/>
+<attribute name="NAME" x="9.8195" y="9.779" size="0.4064" layer="51"/>
+<attribute name="VALUE" x="10.7339" y="8.0772" size="1.016" layer="27"/>
 </element>
 <element name="C25" library="particle SZ" package="C0201-N" value="10nF" x="2.6434" y="17.907" smashed="yes">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="2.6434" y="17.907" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="2.6434" y="17.907" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.0084" y="18.542" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="2.0084" y="16.002" size="1.27" layer="27"/>
+<attribute name="NAME" x="0.4336" y="17.6784" size="0.6096" layer="51"/>
+<attribute name="VALUE" x="2.0084" y="16.002" size="1.016" layer="27"/>
 </element>
 <element name="C22" library="particle SZ" package="C0201-N" value="10pF" x="6.35" y="17.56768125" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="6.35" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="6.35" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="5.715" y="16.93268125" size="0.8128" layer="51" rot="R90"/>
-<attribute name="VALUE" x="8.255" y="16.93268125" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="6.604" y="18.22808125" size="0.6096" layer="51" rot="R90"/>
+<attribute name="VALUE" x="8.255" y="16.93268125" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="C20" library="particle SZ" package="C0201-N" value="1000pF" x="7.1628" y="17.56768125" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="7.1628" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="7.1628" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="6.5278" y="16.93268125" size="0.8128" layer="51" rot="R90"/>
-<attribute name="VALUE" x="9.0678" y="16.93268125" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="7.4168" y="18.27888125" size="0.6096" layer="51" rot="R90"/>
+<attribute name="VALUE" x="9.0678" y="16.93268125" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="C13" library="particle SZ" package="C0201-N" value="100nF" x="7.9676" y="17.56768125" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="7.9676" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="7.9676" y="17.56768125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="7.3326" y="16.93268125" size="0.8128" layer="51" rot="R90"/>
-<attribute name="VALUE" x="9.8726" y="16.93268125" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="8.2724" y="18.27888125" size="0.6096" layer="51" rot="R90"/>
+<attribute name="VALUE" x="9.8726" y="16.93268125" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="C47" library="particle SZ" package="C0201-N" value="100nF" x="2.6566" y="16.2727" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="2.6566" y="16.2727" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="2.6566" y="16.2727" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="3.2916" y="15.6377" size="0.8128" layer="51" rot="R180"/>
-<attribute name="VALUE" x="3.2916" y="18.1777" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="1.9454" y="16.5775" size="0.6096" layer="51" rot="R180"/>
+<attribute name="VALUE" x="3.2916" y="18.1777" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C14" library="particle SZ" package="C0201-N" value="NC" x="9.4615" y="12.2174" smashed="yes" rot="R180">
+<element name="C14" library="particle SZ" package="C0201-N" value="47pF" x="9.4615" y="12.2174" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="CAP CER 10uF 6.3V X5R 0603 10% Low ESR&lt;70mohms" x="9.4615" y="12.2174" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-200209" x="9.4615" y="12.2174" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.0965" y="11.5824" size="0.8128" layer="51" rot="R180"/>
-<attribute name="VALUE" x="10.0965" y="14.1224" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="8.9535" y="12.4714" size="0.6096" layer="51" rot="R180"/>
+<attribute name="VALUE" x="10.0965" y="14.1224" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="U1" library="ELEKTRA-PMIC v0.3-35X22.86-0.8-0402" package="ELECTRON_QFN24" value="BQ24195" x="26.828821875" y="10.81969375" smashed="yes" rot="R180">
-<attribute name="NAME" x="28.828821875" y="8.31969375" size="0.8128" layer="51" rot="R180"/>
-<attribute name="VALUE" x="28.828821875" y="14.56969375" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="24.891821875" y="13.70449375" size="0.6096" layer="51" rot="R180"/>
+<attribute name="VALUE" x="28.828821875" y="14.56969375" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="R16" library="particle SZ" package="R0201-N" value="100K" x="4.40331875" y="17.084040625" smashed="yes" rot="R180">
+<element name="R16" library="particle SZ" package="R0201-N" value="NC" x="4.40331875" y="17.084040625" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402" x="4.40331875" y="17.084040625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201084" x="4.40331875" y="17.084040625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="5.03831875" y="16.449040625" size="0.8128" layer="51" rot="R180"/>
-<attribute name="VALUE" x="5.03831875" y="18.989040625" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="4.02231875" y="17.287240625" size="0.4064" layer="51" rot="R180"/>
+<attribute name="VALUE" x="5.03831875" y="18.989040625" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="R13" library="particle SZ" package="R0201-N" value="100K/NC" x="4.40331875" y="17.907" smashed="yes">
+<element name="R13" library="particle SZ" package="R0201-N" value="100K" x="4.40331875" y="17.907" smashed="yes">
 <attribute name="ITEM_NAME" value="RES SMD 1M OHM 1% 1/16W 0402" x="4.40331875" y="17.907" size="1.778" layer="27" display="off"/>
 <attribute name="ITEM_NUMBER" value="PT-201084" x="4.40331875" y="17.907" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.76831875" y="18.542" size="0.8128" layer="51"/>
-<attribute name="VALUE" x="3.76831875" y="16.002" size="1.27" layer="27"/>
+<attribute name="NAME" x="3.00631875" y="17.7038" size="0.4064" layer="51"/>
+<attribute name="VALUE" x="3.76831875" y="16.002" size="1.016" layer="27"/>
 </element>
 <element name="U6" library="ELEKTRA-PMIC v0.3-35X22.86-0.8-0402" package="SPARKFUN-POWERIC_TDFN-8" value="SPARKFUN-POWERIC_MAX1704X" x="31.324209375" y="15.962171875" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.324209375" y="13.962171875" size="0.4064" layer="51" rot="R90"/>
-<attribute name="VALUE" x="32.724209375" y="13.962171875" size="0.4064" layer="27" rot="R90"/>
+<attribute name="NAME" x="31.834028125" y="16.151009375" size="0.6096" layer="51" rot="R180"/>
+<attribute name="VALUE" x="32.724209375" y="13.962171875" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="R35" library="particle SZ" package="R0201-N" value="27.4K" x="26.5303" y="17.448825" smashed="yes">
 <attribute name="ITEM_NUMBER" value="" x="26.5303" y="17.448825" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="25.8953" y="18.083825" size="1.27" layer="51"/>
-<attribute name="VALUE" x="25.8953" y="15.543825" size="1.27" layer="27"/>
+<attribute name="NAME" x="24.9555" y="17.271025" size="0.4064" layer="51"/>
+<attribute name="VALUE" x="25.8953" y="15.543825" size="1.016" layer="27"/>
 </element>
 <element name="R34" library="particle SZ" package="R0201-N" value="49.9K" x="26.5303" y="16.416871875" smashed="yes" rot="R180">
 <attribute name="ITEM_NUMBER" value="" x="26.5303" y="16.416871875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="27.1653" y="15.781871875" size="1.27" layer="51" rot="R180"/>
-<attribute name="VALUE" x="27.1653" y="18.321871875" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="25.9969" y="16.645471875" size="0.4064" layer="51" rot="R180"/>
+<attribute name="VALUE" x="27.1653" y="18.321871875" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C12" library="particle SZ" library_urn="urn:adsk.eagle:library:21650216" package="C0603" package3d_urn="urn:adsk.eagle:package:21650777/5" value="22uF 10V" x="9.16" y="16.81" smashed="yes" rot="R90">
 <attribute name="ITEM_NAME" value="CAP CER 0.1UF 16V X7R 0402 10%" x="9.16" y="16.81" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ITEM_NUMBER" value="120-00060" x="9.16" y="16.81" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="7.7" y="15.58" size="1" layer="51" rot="R90"/>
-<attribute name="VALUE" x="6.54" y="15.58" size="1" layer="27" rot="R90"/>
+<attribute name="NAME" x="9.4018" y="18.2978" size="0.6096" layer="51" rot="R90"/>
+<attribute name="VALUE" x="6.54" y="15.58" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="R18" library="particle SZ" package="R0201-N" value="10K" x="9.4615" y="14.9352" smashed="yes" rot="R180">
+<element name="R18" library="particle SZ" package="R0201-N" value="NC" x="9.4615" y="14.9352" smashed="yes" rot="R180">
 <attribute name="ITEM_NAME" value="" x="9.4615" y="14.9352" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ITEM_NUMBER" value="" x="9.4615" y="14.9352" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="10.0965" y="14.3002" size="1.27" layer="51" rot="R180"/>
-<attribute name="VALUE" x="10.0965" y="16.8402" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="8.9027" y="15.24" size="0.6096" layer="51" rot="R180"/>
+<attribute name="VALUE" x="10.0965" y="16.8402" size="1.016" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>

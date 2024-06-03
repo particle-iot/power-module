@@ -19,3 +19,6 @@ V0.5-20240430 Change list:
 
 V0.5-2024040506 Change list
 1.add R18 connect to ENABLE，which is reserve for adjustment based on Power consumption testing
+V0.5-2024040603 Change list
+ Resistor Pull-Down : R23->NC,R24->1M, save mode
+   Feedback capacitor :C28->47pF,solve noise
