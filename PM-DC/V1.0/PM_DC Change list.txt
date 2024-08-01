@@ -1,0 +1,15 @@
+V0.3
+1.add load Switch IC
+2.change  some footprint 0201 as 0401
+3.re-placement and re-layout
+
+V0.4-20240430 Change list:
+1.Increase the distance between the shield and the connector
+2.Modify silk screen mark
+3.Change the inductor and diode to lower the height
+
+V1.0-20240729 modify by Frank Yang
+Change list:
+1.Change L1 PCB package.
+2.Remove data silkscreen.
+3.Change C16 package form C0603 to C0805.
