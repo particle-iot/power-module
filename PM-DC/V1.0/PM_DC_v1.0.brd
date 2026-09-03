@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
@@ -246,7 +246,6 @@
 <wire x1="1" y1="19" x2="33.9598" y2="19" width="0.8" layer="29"/>
 <rectangle x1="15.6704" y1="13.2518" x2="21.6704" y2="19.2518" layer="22"/>
 <wire x1="8.9" y1="18.2" x2="9.7" y2="18.2" width="0.1524" layer="41"/>
-<wire x1="31.4" y1="7.4" x2="31" y2="7" width="0.1524" layer="41"/>
 </plain>
 <libraries>
 <library name="Particle">
